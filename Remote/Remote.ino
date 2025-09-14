@@ -8,7 +8,7 @@ int X = 0, Y = 0;
 uint8_t data[4];                                       //packet size.
 
 esp_now_peer_info_t peerInfo;
-uint8_t receiver_mac[] = { 0xEC, 0xFA, 0xBC, 0x75, 0xB7, 0x3A };  // Replace with receiver's MAC
+uint8_t receiver_mac[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };  // Replace with receiver's MAC
 
 void send(uint8_t data[]) {
   esp_now_send(peerInfo.peer_addr, data, sizeof(data));
