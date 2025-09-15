@@ -18,10 +18,10 @@ void send(uint8_t data[]) {
 
 
 void setup() {
-  pinMode(switch_1, INPUT_PULLUP);
-  pinMode(switch_2, INPUT_PULLUP);
   pinMode(pin_x, INPUT);
   pinMode(pin_y, INPUT);
+  pinMode(switch_1, INPUT_PULLUP);
+  pinMode(switch_2, INPUT_PULLUP);
   pinMode(2, OUTPUT);
 
   Serial.begin(115200);
