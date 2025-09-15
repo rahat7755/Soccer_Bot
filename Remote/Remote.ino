@@ -4,11 +4,12 @@
 
 
 const uint8_t pin_x = 35, pin_y = 34;                    // ADC pins for joystick
+const uint8_t switch_1 = 33, switch_2 =25;              //Switch pins
 int X = 0, Y = 0;
-uint8_t data[4];                                       //packet size.
+uint8_t data[4];                                      //packet size.
 
 esp_now_peer_info_t peerInfo;
-uint8_t receiver_mac[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };  // Replace with receiver's MAC
+uint8_t receiver_mac[] = { 0xEC, 0xFA, 0xBC, 0x75, 0xB7, 0x3A };  // Replace with receiver's MAC
 
 void send(uint8_t data[]) {
   esp_now_send(peerInfo.peer_addr, data, sizeof(data));
@@ -17,6 +18,8 @@ void send(uint8_t data[]) {
 
 
 void setup() {
+  pinMode(switch_1, INPUT_PULLUP);
+  pinMode(switch_2, INPUT_PULLUP);
   pinMode(pin_x, INPUT);
   pinMode(pin_y, INPUT);
   pinMode(2, OUTPUT);
@@ -45,15 +48,16 @@ void setup() {
 
 
 void loop() {
-  X = analogRead(pinx);
-  Y = analogRead(piny);
+  X = analogRead(pin_x);
+  Y = analogRead(pin_y);
 
   X = map(X, 4095, 0, 7, -7);
   Y = map(Y, 4095, 0, 7, -7);
 
-  //Zero_zone
+  //Blank_zone
   if (X >= -2 && X <= 2) X = 0;
   if (Y >= -2 && Y <= 2) Y = 0;
+
 
   //joystick to wheel
   int left = Y + X;
