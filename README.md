@@ -86,8 +86,7 @@ This repository includes firmware for the remote, the receiver, and a utility to
 
 ## Block Diagram
 
-Add a diagram (e.g. `docs/block_diagram.jpg`) showing the connection between:  
-**ESP32 (Remote) → ESP-NOW → ESP8266 (Receiver) → Motor Driver → Motors**  
+![Soccer_Bot_Block diagram](https://github.com/user-attachments/assets/29635832-dcfb-4e8a-8aa4-a08110ba8425)
 
 ---
 
