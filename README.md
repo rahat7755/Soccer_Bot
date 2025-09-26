@@ -92,7 +92,7 @@ This repository includes firmware for the remote, the receiver, and a utility to
 
 ## License
 
-This project is licensed under the **MIT License** – see [LICENSE](LICENSE) for details.  
+This project is licensed under the **MIT License** – see [LICENSE](LICENSE.md) for details.  
 
 ---
 
