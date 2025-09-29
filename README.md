@@ -1,10 +1,10 @@
 # Soccer Bot / 2WD RC Car
 
-![Arduino](https://img.shields.io/badge/Arduino-IDE-blue)
-![ESP32](https://img.shields.io/badge/Board-ESP32-green)
-![ESP8266](https://img.shields.io/badge/Board-ESP8266-orange)
-![ESP-NOW](https://img.shields.io/badge/Protocol-ESP--NOW-red)
-![C++](https://img.shields.io/badge/Language-C++-lightgrey)
+![](https://img.shields.io/badge/Arduino%20-IDE-458b8f?style=for-the-badge&labelColor=grey&logo=arduino&logoColor=%2362AEB2&logoSize=auto&link=https%3A%2F%2Fdocs.arduino.cc%2Fprogramming%2F&link=https%3A%2F%2Fwww.arduino.cc%2Fen%2Fsoftware%2F)
+![](https://img.shields.io/badge/Devkit-ESP32-red?style=for-the-badge&labelColor=grey&logo=espressif&logoColor=ca2f11&logoSize=auto&link=https%3A%2F%2Fwww.espressif.com%2Fen%2Fproducts%2Fdevkits&link=https%3A%2F%2Flastminuteengineers.com%2Fgetting-started-with-esp32%2F)
+![](https://img.shields.io/badge/Devkit-ESP8266-692f26?style=for-the-badge&labelColor=grey&logo=espressif&logoColor=ca2f11&logoSize=auto&link=https%3A%2F%2Fwww.espressif.com%2Fsites%2Fdefault%2Ffiles%2Fdocumentation%2FESP8266-DevKitS_user_guide__EN.pdf&link=https%3A%2F%2Flastminuteengineers.com%2Fgetting-started-with-esp8266)
+![](https://img.shields.io/badge/ESP%20NOW-Protocol-yellow?style=for-the-badge&labelColor=grey&logo=espressif&logoColor=ca2f11&logoSize=auto&link=https%3A%2F%2Fdocs.espressif.com%2Fprojects%2Fesp-idf%2Fen%2Fstable%2Fesp32%2Fapi-reference%2Fnetwork%2Fesp_now.html&link=https%3A%2F%2Fdocs.arduino.cc%2Ftutorials%2Fnano-esp32%2Fesp-now%2F)
+![](https://img.shields.io/badge/C%2B%2B-Commands-blue?style=for-the-badge&labelColor=grey&logo=cplusplus&logoColor=blue&logoSize=auto&link=https%3A%2F%2Fdocs.arduino.cc%2Fprogramming%2F&link=https%3A%2F%2Fdocs.arduino.cc%2Fprogramming%2F)
 
 A two-wheel drive Soccer Bot controlled wirelessly using **ESP32** (remote) and **ESP8266** (receiver).  
 The system uses **ESP-NOW** protocol for reliable, low-latency communication.  
