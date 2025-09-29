@@ -54,11 +54,11 @@ This repository includes firmware for the remote, the receiver, and a utility to
 
 - **Receiver (ESP8266):**  
   - ESP8266 NodeMCU  
-  - L293D / IBT-2 motor driver  
+  - L293D / L298n / IBT-2 motor driver  
   - N20 / 25GA / 37GB 550 DC motors (2-wheel / 4-wheel drive)  
   - 12V Li-ion battery  
 
-*See the `docs/` folder for hardware setup images and block diagram (JPG).*  
+*See the `docs/` folder for hardware setup images, pinouts and block diagram (JPG).*  
 
 ---
 
